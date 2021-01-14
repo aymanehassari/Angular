@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   addArticle(title: HTMLInputElement, link: HTMLInputElement): boolean {
-    let t = title.value;
-    let v= link.value;
-    console.log(`Adding article title: `+t+ ` and link: `+ v);
+   addArticle(spamText: HTMLInputElement, num: HTMLInputElement): boolean {
+    let t = spamText.value;
+    let v= num.value;
+    console.log(`spamText: ${spamText.value} and spamNum: ${num.value}`);
     return false;
     
 
