@@ -11,7 +11,7 @@ export class AppComponent {
     let v= num.value;
     console.log(`spamText: ${spamText.value} and spamNum: ${num.value}`);
     return false;
+    let cont = Number(num.value); // Converte stringhe in numeri
     
-
   }
 }

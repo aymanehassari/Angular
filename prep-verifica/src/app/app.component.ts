@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prep-verifica';
+  articles = new Array<string>(); //Dichiaro un array di stringhe
+  addArticle(spamText: HTMLInputElement, num: HTMLInputElement): boolean {
+    let t = spamText.value;
+    let v= num.value;
+    console.log(`spamText: ${spamText.value} and spamNum: ${num.value}`);
+    return false;
+    let cont = Number(num.value); // Converte stringhe in numeri
+  }
 }
