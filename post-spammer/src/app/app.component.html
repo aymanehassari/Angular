@@ -1,0 +1,21 @@
+<form>
+  <div class = "form-group">
+    <label for = "useless">Cose inutili</label>
+    <input class="form-control" name = "useless" #useless>
+     <small id="emailHelp" class="form-text text-muted">Metti una frase inutile</small>
+  </div>
+  <div class = "form-group">
+    <label for = "spam">Spam</label>
+    <input class="form-control" name = "spam" #spam>
+    <small id="emailHelp" class="form-text text-muted">Quante volte la vuoi ripetere?</small>
+  </div>
+  <button (click)="addSpam(useless, spam)">
+    Submit spam
+  </button>
+</form>
+
+<ul class = "list-group">
+  <li class = "list-group-item" *ngFor = "let a of articles">
+    {{a}}
+  </li>
+</ul>
