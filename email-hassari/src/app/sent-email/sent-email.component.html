@@ -1,2 +1,5 @@
-<p>{{email|json}}</p>
+<div>
+<tr><td><p>{{email.oggetto}} - {{email.destinatario}}</p></td><td><button (click) = "espandi()">espandi</button></td></tr>
+<p *ngIf = "espanso == true">{{email.testo}}</p>
+</div>
 
